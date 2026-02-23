@@ -1,0 +1,8 @@
+node_modules
+supabase/migrations
+supabase/functions
+.vscode
+.DS_Store
+.env
+.env.*
+README.md
