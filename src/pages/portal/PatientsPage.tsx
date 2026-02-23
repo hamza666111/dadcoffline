@@ -45,8 +45,8 @@ export default function PatientsPage() {
   const [filterClinic, setFilterClinic] = useState('');
   const [filterDoctor, setFilterDoctor] = useState('');
   const [page, setPage] = useState(1);
-  const [clinics, setClinics] = useState<Clinic[]>([]);
-  const [doctors, setDoctors] = useState<UserProfile[]>([]);
+  const [clinics, setClinics] = useState<Array<Partial<Clinic>>>([]);
+  const [doctors, setDoctors] = useState<Array<Partial<UserProfile>>>([]);
 
   const [showForm, setShowForm] = useState(false);
   const [editPatient, setEditPatient] = useState<Patient | null>(null);
